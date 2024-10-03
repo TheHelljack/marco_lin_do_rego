@@ -21,3 +21,9 @@ criaCartao(
     'Qual a fórmula do ácido clorídrico',
     'HCl'
 )
+
+criaCartao(
+    'Geografia',
+    'O que é Sial e Sima',
+    'Sima em sua maior parte, por Silício e Magnésio, sendo constituída por rochas predominantemente basálticas e compõe a porção inferior da crosta, sial é composta, principalmente, por Silício e Alumínio, constituída majoritariamente por rochas graníticas, basálticas e sedimentares. '
+)
