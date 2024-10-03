@@ -4,7 +4,7 @@ function criaCartao(categoria, pergunta, resposta){
     cartao.className = 'cartao';
     cartao.innerHTML = `
     <div class = "cartao-conteudo">
-    <h1>${categoria}</h1>
+    <h3>${categoria}</h3>
     <div class = "cartao-pergunta">
         <p>${pergunta}</p>
     </div>
