@@ -1,3 +1,15 @@
+:root { 
+    --text-color: blue;
+    --card-front-color: purple;
+    --card-back-color: yellow;
+    --fundo: grey;
+    --destaque: green;
+}
+
+body {
+    background-color: var(--fundo);
+}
+
 footer{
     background-color: black;
     color: var(--frente);
