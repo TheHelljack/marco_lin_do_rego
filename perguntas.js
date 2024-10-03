@@ -16,4 +16,8 @@ criaCartao(
     'V + F = A + 2 '
 )
 
-criaCartao()
+criaCartao(
+    'Quimica',
+    'Qual a fórmula do ácido clorídrico',
+    'HCl'
+)
