@@ -12,5 +12,8 @@ criaCartao(
 
 criaCartao(
     'Matemática',
-    'Qual a fórmula para descobrir número de arestas,.,'
+    'Qual a fórmula que a relação de Euler fala sobre descobrir vértices, faces e arestas de um poliedro',
+    'V + F = A + 2 '
 )
+
+criaCartao()
