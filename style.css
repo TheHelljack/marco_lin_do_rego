@@ -1,13 +1,17 @@
-:root { 
-    --text-color: blue;
-    --card-front-color: purple;
-    --card-back-color: yellow;
-    --fundo: rgb(66, 7, 51);
-    --destaque: green;
+:root{
+    --fundo: #503C3C;
+    --sombra: #3E3232;
+    --verso: #6b5050;
+    --frente: #ffdcdc; /* cor do texto */
+ 
 }
 
-body {
-    background-color: var(--fundo);
+
+/* Classes */
+body{
+    background-color:  var(--fundo);
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
 }
 
 footer{
@@ -27,7 +31,7 @@ footer{
 }
 
 .cartao{
-    margin: 1rem 1rem;
+    margin: 1rem;
     height: 20rem;
     flex-grow: 1;
     flex-basis: calc(33% - 6rem);
@@ -39,10 +43,11 @@ footer{
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 300ms ease-in-out;
+    border-radius: 6px;
 }
 
 .cartao-conteudo h3{
-    color: var(--frente);
+    color: var(--sombra);
     border: 1px solid var(--frente);
     text-align: left;
     padding: 0.5rem;
@@ -56,20 +61,22 @@ footer{
 .cartao-conteudo p{
     margin-top: 4rem;
     padding: 2rem;
+    font-size: 1.4vw;
+   
 }
 
 .cartao-pergunta p{
-    color: var(--frente);
+    color: var(--sombra);
     font-weight: 500;
 }
 
-.cartao-reposta p{
-    color: var(--verso);
+.cartao-resposta p{
+    color: var(--frente);
     font-weight: 700;
 }
 
-.cartao-pergunta, .cartao-reposta{
-    visibility: hidden;
+.cartao-pergunta, .cartao-resposta{
+    backface-visibility: hidden;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -79,22 +86,12 @@ footer{
 
 .cartao.active .cartao-conteudo{
     transform: rotateY(180deg);
-} 
-
-.cartao-pergunta,
-.cartao-resposta{
-    backface-visibility: hidden;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    color: rgb(0, 119, 255);
-    background: #b1af60;
 }
 
-
-.cartao-reposta { 
+.cartao-resposta{
     transform: rotateY(180deg);
-    background-color: var(--card-back-color);
-    border: 4px solid var(--destaque);
+    background-color: var(--sombra);
+    border-radius: 6px;
+    border: 1px solid var(--frente);
+    box-shadow: 0px 0px 22px 0px var(--frente);
 }
