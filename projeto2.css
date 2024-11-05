@@ -1,11 +1,9 @@
 :root {
-    --fundo: #b6abeb;
-    --cor-texto: #ffffff;
-    --cor-frente-cartao: #5d5fe2;
-    --cor-verso-cartao: #481c85;
-    --roda-pe: #27164a;
-    --branco: #ffffff;
-}
+    --fundo: #3b9ada;
+    --sombra: #0e5483;
+    --verso: #0f8de0;
+    --frente: #0fdfee; /* cor do texto */
+ 
 
 body {
     background-color: var(--fundo);
